@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Memory</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="endWindow" id="Window" onclick="toCloseWindow()">
+	<div class="endWindow-content">
+		<p>Your score: <span id="endScore"></span></p>
+		<p>Your time: <span id="endTime"></span></p>
+		<p>Actions: <span id="endActions"></span></p>
+	</div>
+	<button class="endClose">&times;</button>
+</div>	
+<div class="section-wrapper">
+	<div class="header">
+	Memory
+	</div>
+	<div class="timer">Time: <span id="countTime">0</span> s</div>
+	<div class="message">Info: press "Start" button</div>
+	<div class="box-storage" id="storage">
+		<div class="box" ></div> 
+		<div class="box"></div> 
+		<div class="box"></div> 
+		<div class="box"></div> 
+		<div class="box"></div> 
+		<div class="box"></div> 
+		<div class="box"></div> 
+		<div class="box"></div> 
+		<div class="box"></div> 
+		<div class="box"></div> 
+		<div class="box"></div> 
+		<div class="box"></div> 
+		<div class="box"></div> 
+		<div class="box"></div> 
+		<div class="box"></div> 
+		<div class="box"></div> 
+		<div class="box"></div> 
+		<div class="box"></div> 
+	</div>
+	<div class="counter action" id="labelAction">Actions: 
+		<span id="actions">0</span></div>
+	<div class="counter score" id="labelScore">Score: 
+		<span id="scores">0</span></div>
+	<button type="button" class="start" onclick="toGenerateImage()">Start</button>
+	<button type = "button" class = "stop" onclick = "stopGame()">Stop</button>
+</div>
+	<script src="script/script.js"></script>
+</body>
+</html>

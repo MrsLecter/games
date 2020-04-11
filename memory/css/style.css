@@ -1,0 +1,137 @@
+body{
+	background-color: #cfd0cf;
+}
+.section-wrapper{
+	position:relative;
+}
+.header {
+	font-size:  24px;
+	text-align: center;
+	margin-top: 48px;
+	margin-bottom: 48px;
+}
+.timer{
+	width: 150px;
+	font-size:  24px;
+	margin-top: -50px;
+	float: right;
+	margin-right: 150px;
+}
+.message{
+	font-size:  24px;
+	margin-top: -50px;
+	float: left;
+	margin-left: 150px;
+}
+.box-storage {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	width: 1000px;
+	margin: 0 auto;
+}
+.box {
+	position: relative;
+	 perspective: 600px;
+	display: block;
+	margin: 14px;
+	width: 130px;
+	height: 130px;
+	border: 2px solid white;
+	border-radius: 5px;
+	color: transparent;
+	font-size:  100px;
+	text-align: center;
+	vertical-align: center;
+	background: linear-gradient(to top right, #22a793, #196a8d);
+	cursor: pointer;
+
+}
+.box.twistOn {
+	animation-name: twistOn;
+	animation-duration: 0.5s;
+	animation-fill-mode: both;
+}
+@keyframes twistOn {
+	from {transform: rotateY(0deg), rotateZ(0deg);color: transparent;}
+  	to {transform: rotateY(180deg); background: white; color: black;}
+}
+.box.twistOff {
+	animation-name: twistOff;
+	animation-duration: 0.5s;
+	animation-fill-mode: both;
+}
+@keyframes twistOff{
+	from {transform: rotateY(180deg); background: white; color: black;}
+  	to {transform: rotateY(0deg); background: linear-gradient(to top right, #22a793, #196a8d); color: transparent;}
+}
+.counter {
+	position:  absolute;
+	font-size: 24px;
+}
+.action{
+	float: left;
+	margin-left: 15%;
+}
+.score {
+	float: left;
+	margin-left: 74%;
+}
+.start{
+	position: absolute;
+	width: 150px;
+	height: 30px;
+	left: calc(40% - 50px);
+	background: transparent;
+	font-size: 20px;
+}
+.start:hover,
+.stop:hover{
+	background: #22a793;
+}
+.stop{
+	position: absolute;
+	width: 150px;
+	height: 30px;
+	left: calc(55% - 50px);
+	background: transparent;
+	font-size: 20px;
+}
+.endWindow{
+	position: fixed;
+	top: 0;
+	left: 0;
+	display:none;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 0.8;
+	z-index: 2;
+}
+.endWindow-content{
+	position: absolute;
+	padding:  15px;
+	top: 25%;
+	left: 40%;
+	z-index: 2;
+	color: white;
+	font-size: 24px;
+	width: 300px;
+	height: 200px;
+	border-radius: 5px;
+	border: 1px solid white;
+	background-color: black;
+}
+
+.endClose{
+	position: absolute;
+	background: transparent;
+	border: none;
+	top: 5%;
+	left: 90%;
+	color: white;
+	font-size: 32px;
+}
+.endClose:hover{
+	cursor:pointer;
+}
