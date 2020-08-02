@@ -1,0 +1,27 @@
+{
+  "name": "hillelfrontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server . --open=sandbox",
+    "snake": "live-server . --open=sandbox/snake",
+    "lint": "eslint sandbox/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zamuka/hillelfrontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zamuka/hillelfrontend/issues"
+  },
+  "homepage": "https://github.com/zamuka/hillelfrontend#readme",
+  "dependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "7.5.0",
+    "live-server": "1.2.1"
+  }
+}

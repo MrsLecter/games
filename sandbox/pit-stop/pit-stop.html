@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pit Stop</title>
+  <link rel="stylesheet" type="text/css" href="../styles/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./pit-stop.css">
+  <script type="module" src="./pit-stop.js"></script>
+</head>
+<body>
+  <main class="container">
+    <h3 class="mt-3 mb-3">F1 pit-stop</h3>
+    <div class="card-deck">
+     <div class="card task">
+        <div class="card-header">
+          Условие
+        </div>
+        <div class="card-body">
+          <div class="card-title">
+            <p>Дайте команду пилоту выезжать из пит-стопа, когда болид будет полностью заправлен и все колеса будут установлены</p>
+            <ul>
+              <li>Один механик заправляет машину. Когда бак будет заполнен, механик отправляет события <code>tankFull</code>.</li>
+              <li>Еще четыре механика ставят колеса. Когда механик устанавливает колесо - он отправляет событие <code>wheelInstalled</code></li>
+              <li>Поймать эти события можно точно также, как и любой другой DOM event - с помощью addEventListener. Эти события всплывают (bubbles), так что можно ловить события как на самом элементе, так и на любом родительском.</li>
+              <li>Добавьте класс <code>go</code> на элемент <code>#pit-stop</code> когда все механики будут готовы и болид поедет!</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    <div class="card result">
+      <div class="card-header">
+        Результат:
+      </div>
+      <div class="card-body">
+        <div id="pit-stop">
+          <div id="car">
+            <div class="chasis">
+              <div class="wheel"></div>
+              <div class="wheel"></div>
+              <div class="wheel"></div>
+              <div class="wheel"></div>
+            </div>
+            <div class="bolid back"></div>
+            <div class="bolid tail"></div>
+            <div class="bolid nose"></div>
+            <div class="bolid back-susp"></div>
+            <div class="bolid front-susp"></div>
+            <div class="bolid body"></div>
+            <div class="driver"></div>
+          </div>
+          <div class="mechanic wheelman one"></div>
+          <div class="mechanic wheelman two"></div>
+          <div class="mechanic wheelman three"></div>
+          <div class="mechanic wheelman four"></div>
+          <div class="mechanic refueller"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

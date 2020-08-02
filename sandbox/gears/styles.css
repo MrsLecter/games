@@ -1,0 +1,54 @@
+.container {
+  height: 120vh;
+}
+
+.parent {
+  display: flex;
+  height: 500px;
+  background: #198;
+}
+
+.gear {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  background: #fff;
+  border-radius: 50%;
+  transition: 0.1s;
+}
+
+.gear:after {
+  content: '';
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  z-index: 10;
+  width: 100px;
+  height: 100px;
+  background: black;
+  border-radius: 50%;
+}
+
+.tooth {
+  position: absolute;
+  top: -25px;
+  left: 75px;
+  z-index: 1;
+  width: 45px;
+  height: 250px;
+  background:#fff;
+}
+
+.tooth:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.tooth:nth-child(3) {
+  transform: rotate(90deg);
+}
+
+.tooth:nth-child(4) {
+  transform: rotate(-45deg);
+}
+

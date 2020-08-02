@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gears</title>
+  <link rel="stylesheet" type="text/css" href="../styles/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+  <script src="./main.js"></script>
+</head>
+
+<body>
+  <main class="container">
+    <h3 class="mt-3 mb-3">Gears</h3>
+    <div class="card-deck">
+      <!--<div class="card task">
+        <div class="card-header">
+          Условие
+        </div>
+        <div class="card-body">
+          <div class="card-title">
+            <p>Сделайте так, чтобы шестеренка крутилась когда вы крутите колесико мыши находясь над ней</p>
+          </div>
+          <div class="card-text">
+            <p>Делаем по шагам:</p>
+            <ul>
+              <li>В файле <code>main.js</code> создаем функцию, которая выполнится после загрузки страницы. Можно вдохновляться заданием <code>pit-stop</code>.</li>
+              <li>Найдите название события для колесика мыши и добавьте обработчик (пока пустой) на это событие елемента <code>.gear</code></li>
+              <li>Временно выводим событие в консоль и ищем там подходящее свойство, по которому мы можем понять направление вращения.</li>
+              <li>Объявим переменную в основной функции, в которой будем хранить угол вращения в градусах</li>
+              <li>Увеличиваем или уменьшаем значение угла поворота при срабатывании события колесика и ...</li>
+              <li>Задаем угол поворота шестеренки <code>.gear</code> присваивая в её <code>.style.transform</code> сроку вида <code>"rotate(15deg)"</code>.</li>
+              <li>Предотвращаем скролл окна, когда мы крутим шестеренку (вспоминаем методы события)</li>
+            </ul>
+          </div>
+        </div>
+      </div>-->
+      <div class="card result">
+        <div class="card-header">
+          Результат: <span id="result"></span>
+        </div>
+        <div class="card-body">
+          <div class="parent">
+            <div class="gear" >
+              <div class="center"></div>
+              <div class="tooth"></div>
+              <div class="tooth"></div>
+              <div class="tooth"></div>
+              <div class="tooth"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
